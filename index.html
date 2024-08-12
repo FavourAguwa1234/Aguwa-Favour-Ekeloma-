@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aguwa Favour Ekeloma Portfoloio </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="index.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+</style>
+
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+<section id="content">
+  <nav class="w3-sidebar w3-bar-block w3-indigo w3-animate-left w3-text-white w3-collapse w3-top w3-center" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center w3-sofia"><b>Aguwa<br>Favour<br>Ekeloma <b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-indigo w3-padding w3-hide-large">close</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-indigo w3-xlarge w3-padding-16" data-aos="fade-up">
+  <span class="w3-center w3-padding" s>Aguwa Favour Ekeloma</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-indigo" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div><br>
+  <h1 class="w3-container w3-jumbo  " id="Showcase" style=" font-weight: 900; "> <b class="w3-text-indigo" data-aos="fade-up">My Lastest Work </b> </h1>
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="image/IMG_1115.jpg" data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="it a Golbal shocase ">
+      <img src="image/IMG_1114.jpg" data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+       </div>
+
+    <div class="w3-third">
+      <img src="image/IMG_1117.jpg" data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+     <img src="image/IMG_1111.jpg"data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+       <!-- <img src="image/IMG_8444.JPG" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!"> -->
+    </div>
+    
+    <div class="w3-third">
+      <img src="image/IMG_1116.jpg" data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="image/IMG_1112.jpg" data-aos="fade-up" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <!-- <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!"> -->
+    </div>
+  </div>
+ 
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about" data-aos="fade-up">
+    <h4><b>About Me</b></h4>
+    
+    <img src="image/img_avatar.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650" data-aos="fade-up">
+    <div class="w3-content w3-justify" style="max-width:600px" data-aos="fade-up">
+      <h4 data-aos="fade-up">Aguwa Favour Ekeloma</h4>
+      <p> </p>
+      <p data-aos="fade-up">favourekelomaaguwa@gmail.com</p>
+      <p data-aos="fade-up">tel: +234 813 484 788 6</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16"  data-aos="fade-up" >Technical Skills</h4>
+      <p class="w3-wide"  data-aos="fade-up">(FrontEnd Development)</p>
+            <span class="w3-wide" style="margin-left: 20px;"  data-aos="fade-up"> buliding of website</span>
+      <div class="w3-white"  data-aos="fade-up">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:97%"  data-aos="fade-up">97%</div>
+      </div><br>
+     
+
+
+      <p class="w3-wide" data-aos="fade-up">website Manager</p>
+      <span class="w3-wide" style="margin-left: 20px ;">Management of site<span>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:98%" data-aos="fade-up">98%</div>
+      </div>
+      <!-- <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity"> -->
+
+      <h4 class="w3-padding-16" data-aos="fade-up">How much I charge to manage a website</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic website </li>
+            <li class="w3-padding-16">Small business, brochure-style</li>
+            <li class="w3-padding-16">Hosting</li>
+            <li class="w3-padding-16">Mantenance and Updates</li>
+                         <h2>$100 - $300</h2>
+              <span class="w3-opacity">yearly</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Medium-sized website</li>
+            <li class="w3-padding-16">(e-commerce.blog, or Portfolio) </li>
+            <li class="w3-padding-16">Hosting</li>
+            <li class="w3-padding-16">Maintenance and Updates</li>
+          
+              <h2>$1,200-2600 </h2>
+              <span class="w3-opacity">yearly</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+     
+      <div class="w3-row-padding" style="margin:0 -16px">
+        
+        <div class="w3-half w3-margin-bottom">
+          <br>
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Large website </li>
+            <li class="w3-padding-16">enterprise, complex functionality</li>
+            <li class="w3-padding-16">Hosting</li>
+            <li class="w3-padding-16">Mantenance and Updates</li>
+                         <h2>$3,200 - $6,300</h2>
+              <span class="w3-opacity">yearly</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+            </li>
+          </ul>
+        </div>
+
+        <br>
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">E-commerce website </li>
+            <li class="w3-padding-16">(online store, Payment processing ) </li>
+            <li class="w3-padding-16">Hosting</li>
+            <li class="w3-padding-16">Maintenance and Updates</li>
+          
+              <h2>$1,900-$4,200 </h2>
+              <span class="w3-opacity">yearly</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding" style="margin:0 -16px">
+        
+      <div class="w3-container 3-margin-bottom">
+        <br>
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Custom or complex Website  </li>
+          <li class="w3-padding-16">high-end design, advanced</li>
+          <li class="w3-padding-16">Hosting</li>
+          <li class="w3-padding-16">Mantenance and Updates</li>
+                       <h2>$3,200 - $6,300</h2>
+            <span class="w3-opacity">yearly</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+     <h4 class="w3-padding-16" data-aos="fade-up">How much I charge for website</h4>
+  <div class="w3-row-padding w3-container" style="margin:0 -16px">
+    <div class="w3- w3-margin-bottom">
+      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-black w3-xlarge w3-padding-32">Different type of website and price</li>
+        <li class="w3-padding-16">Basic website (5-10 pages) =$500-$2,000 </li>
+        <li class="w3-padding-16">Small business website(10-20)= $2,000-$5,000 </li>
+        <li class="w3-padding-16">E-commerce Website= $3,000-$10,000</li>
+        <li class="w3-padding-16">Custom or complex website= $5,000 - $20,000</li>
+        <li class="w3-padding-16"> website redesign= $1,000 - $5,000</li>
+                    
+          <span class="w3-opacity">yearly</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button>
+        </li>
+      </ul>
+    </div>
+    
+   
+  </div>
+  </div>
+
+ 
+ 
+
+ 
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>my story</h3>
+        <p>my name is Aguwa favour ekeloma form, Nigeria, Abuja I am a FrontEnd developer. I started FrontEnd feburary 2024 with the help of my dad and my mom, and mr Gate my mentor .</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="image/IMG_1111.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">we offers you the best cleaning job </span><br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="image/IMG_1112.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">we give you the latest shampoo hair</span><br>
+            <span></span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>Also contact me on </h3>
+        <div class="w3-container" id="contact">
+         
+        
+          <div id="id01" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h2 class="w3-tangerine">Contact me here</h2>
+              </header>
+              <div class="container">
+                <form action="">
+                  <label for="fname">full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="full name..">
+              
+                  <label for="country">What i can offer you</label>
+                  <select id="country" name="country">
+                    <option value="australia">manage you website</option>
+                    <option value="canada">Create one for </option>
+                    <!-- <option value="usa"></option> -->
+                  </select>
+              
+                 
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></form>
+                  <!--  -->
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn" >Message</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="" >Telegram</a>
+                      <a href="#home">whatsapp</a>
+                      <a href="#about">facebook</a>
+                      <a href="#contact">Instagram</a>
+                    </div>
+                  </div>
+                  
+              </div>
+            
+            
+              </div>
+          </div>
+        </div>
+          
+          <span>click here to <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> contact me</button> </span>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>Web-Designer</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Nigeria, Abuja</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="https://accounts.google.com/b/0/AddMailService" target="_blank">favourekelomaaguwa@mail.com</a></p>
+            
+            <p><i class="fa fa-whatsapp fa-fw w3-margin-right w3-large"></i><a href="https://web.whatsapp.com/< +2349160773214> " target="_blank">+234 8134847886</a></p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large "></i>+234 8134847886</p>
+            <p><i class="fa fa-telegram fa-fw w3-margin-right w3-large "></i><a href="https://t.me/progammer15" target="_blank">
+              progammer15</a></p>
+            <p><i class=" fa fa-facebook fa-fw w3-margin-right w3-large "></i><a href="https://www.facebook.com/profile.php?id=61556534934246" target="_blank">Favour Aguwa</a></p>
+            <p><i class=" fa fa-github fa-fw w3-margin-right w3-large "></i>+234 8134847886</p>
+            <hr>
+            </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Thanks for viewing my profoilio You can also check <a href="cv.html" target="_blank" class="w3-hover-opacity" >MY CV</a></div>
+
+</section>
+<!-- End page content -->
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+AOS.init();
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+
+</body>
+</html>
